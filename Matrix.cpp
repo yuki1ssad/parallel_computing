@@ -42,6 +42,14 @@ Matrix::~Matrix() {
     free(_ptr);
 }
 
+int Matrix::get_row(){
+    return _row;
+}
+
+int Matrix::get_col(){
+    return _col;
+}
+
 int Matrix::get_element(int r, int c) const {
     return _ptr[r][c];
 }

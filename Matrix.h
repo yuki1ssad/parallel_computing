@@ -11,6 +11,8 @@ public:
     ~Matrix();
     Matrix operator*(const Matrix& a);
     Matrix para_mul(const Matrix& a, int trd);
+    int get_row();
+    int get_col();
     int get_element(int r, int c) const;
     void set_element(int r, int c, int val);
     void display();
